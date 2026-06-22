@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Library SPA</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: '0 10px 30px rgba(0,0,0,0.08)',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+    <!-- Vue Router 4 CDN -->
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
+  </head>
+
+  <body class="min-h-full bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <div id="app"></div>
+
+    <!-- Load Phase 1 globals (no bundler / no import/export) -->
+    <script src="./services/api.js"></script>
+    <script src="./app-root.js"></script>
+    <script src="./pages/Home.js"></script>
+    <script src="./pages/Login.js"></script>
+    <script src="./pages/Dashboard.js"></script>
+    <script src="./pages/Buku.js"></script>
+    <script src="./pages/Kategori.js"></script>
+    <script src="./pages/User.js"></script>
+    <script src="./pages/Katalog.js"></script>
+    <script src="./pages/DetailBuku.js"></script>
+    <script src="./router/index.js"></script>
+    <script src="./app.js"></script>
+
+  </body>
+</html>
+
+
+
