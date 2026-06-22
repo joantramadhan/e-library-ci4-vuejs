@@ -1,0 +1,17 @@
+# CI4
+.env
+/vendor/
+/writable/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Logs
+*.log
